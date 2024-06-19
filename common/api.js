@@ -3,44 +3,44 @@ const {
 } = uni.$u
 
 export const TeacherLogin = (params = {}, config = {}) =>
-	http.post('/TeacherLogin', params, config)
+	http.post('/api/user/teacherLogin', params, config)
 	
 export const StudentLogin = (params = {}, config = {}) =>
-	http.post('/StudentLogin', params, config)
+	http.post('/api/user/studentLogin', params, config)
 	
 export const checkAvatar = (params = {}, config = {}) =>
-	http.post('/api/checkAvatar', params, config)
+	http.post('/api/user/checkAvatar', params, config)
 		
 export const UnfinishedReserve = (params = {}, config = {}) =>
-	http.post('/api/Reserve/UnfinishedReserve', params, config)
+	http.post('/api/user/Reserve/UnfinishedReserve', params, config)
 
 export const GetUserDetail = (params = {}, config = {}) =>
-	http.post('/api/MP/GetUserDetail', params, config)
+	http.post('/api/user/MP/GetUserDetail', params, config)
 
 export const TopTen = (params = {}, config = {}) =>
-	http.post('/api/Reserve/TopTen', params, config)
+	http.post('/api/user/Reserve/TopTen', params, config)
 
 export const CancelReserve = (params = {}, config = {}) =>
-	http.post('/api/Reserve/CancelReserve', params, config)
+	http.post('/api/user/Reserve/CancelReserve', params, config)
 
 export const HistoryRecord = (params = {}, config = {}) =>
-	http.post('/api/Reserve/HistoryRecord', params, config)
+	http.post('/api/user/Reserve/HistoryRecord', params, config)
 
 export const AvailableRoom = (params = {}, config = {}) =>
-	http.post('/api/Reserve/AvailableRoom', params, config)
+	http.post('/api/user/Reserve/AvailableRoom', params, config)
 	
 export const CreateReserve = (params = {}, config = {}) =>
-	http.post('/api/Reserve/CreateReserve', params, config)
+	http.post('/api/user/Reserve/CreateReserve', params, config)
 	
 export const ViewStudents = (params = {}, config = {}) =>
-	http.post('/api/Reserve/ViewStudents', params, config)
+	http.post('/api/user/Reserve/ViewStudents', params, config)
 
 export const signIn = (params = {}, config = {}) =>{
-	return http.post('/api/Reserve/signIn', params, config)
+	return http.post('/api/user/Reserve/signIn', params, config)
 }
 
 export const uploadImg = (url,fromdata) =>
-	http.upload('/api/upload/images', {
+	http.upload('/api/user/upload/images', {
 		params: {} /* 会加在url上 */,
 		filePath: url, // 要上传文件资源的路径。
 		// 注：如果局部custom与全局custom有同名属性，则后面的属性会覆盖前面的属性，相当于Object.assign(全局，局部)

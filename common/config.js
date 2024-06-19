@@ -4,7 +4,7 @@ const PRODUCTION_URL = 'https://'
 // 开发服务器地址列表
 const DEVELOPMENT_URLS = {
 	PRODUCTION: PRODUCTION_URL,
-	xingyeai: 'http://localhost:8088/EKKO-KING'
+	xingyeai: 'http://localhost:8086'
 }
 
 // 切换开发服务器地址
